@@ -3,46 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Portafolio</title>
 </head>
 <body>
-    <header>
+
+    <!-- Apartado de metadatos y referencias -->
+    <header class="header">
         <!-- Barra de navegación de la página -->
-        <nav>
-            <a>Home</a>
-            <a>Sobre mí</a>
+        <nav class="header__menu">
+            <a class="header__menu__link" href="index.html">Home</a>
+            <a class="header__menu__link" href="about.html">Sobre mí</a>
         </nav>
     </header>
 
     <!-- Contenido principal (es variable por cada página) -->
-    <main>
+    <main class="presentacion">
+        
         <!-- Es contenido puntual. No es necesario el uso de HTML semántico. -->
-        <section>
-            
+        <section  class="presentacion__contenido">    
             <!-- Contenido titular de la sección -->
-            <h1>
-                Eleve su negocio digital a otro nivel <strong>con un Front-end de calidad</strong>
+            <h1 class="presentacion__contenido__titulo">
+                Eleve su negocio digital a otro nivel <strong class="titulo__destaque">con un Front-end de calidad</strong>
             </h1>
 
             <!-- Párrafo de la sección -->
-            <p>
+            <p class="presentacion__contenido__texto">
                 ¡Hola! Soy Ana García, desarrolladora Frond-end con especialización en React, HTML y CSS. Ayudo a pequeños negocios y diseñadores a llevar a cabo buenas ideas. ¿Hablamos?  
             </p>
 
             <!-- Sección para los enlaces con título (h2) -->
-            <section>
-                <h2>Accede a mis redes</h2>
-                <a>GitHub</a>
-                <a>LinkedIn</a>
-                <a>Twitch</a>
+            <section class="presentacion__contenido__enlaces">
+                <h2 class="presentacion__enlaces__subtitulo">Accede a mis redes</h2>
+                <a class="presentacion__enlaces__link" href="https://github.com/">
+                    <img src="./assets/Logo Github.png" alt="Logo de GitHub">
+                    GitHub
+                </a>
+                <a class="presentacion__enlaces__link" href="https://linkedin.com/in/">
+                    <img src="./assets/Logo linkedin.png" alt="Logo de LinkedIn">
+                    LinkedIn
+                </a>
+                <a class="presentacion__enlaces__link" href="https://twitch.tv/">
+                    <img src="./assets/Logo Twitch.png" alt="Logo de twitch">
+                    Twitch
+                </a>
             </section>
 
-            <img src="./assets/Imagen.png" alt="Foto de Ana García desarrollando un proyecto">
         </section>
+
+        <!-- Adición de la imagen de Ana García (no hay necesidad de emplear divs ni semántica) -->
+        <img src="./assets/Imagen.png" alt="Foto de Ana García desarrollando un proyecto">
+
     </main>
 
-    <footer>
+    <!-- Footer con información general de desarrollo (autor) -->
+    <footer class="footer">
         <p>Desarrollado por LuchoGGnt</p>
     </footer>
     
