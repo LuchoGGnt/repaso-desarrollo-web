@@ -1,0 +1,140 @@
+/* Importación de la fuente a emplear */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+/* MODIFICACIÓN DE VALORES DE RAÍZ (variables y demás) */
+:root {
+    /* Configuración de colores (variables) */
+    --color-primario: #000;
+    --color-secundario: #F6F6F6;
+    --color-terciario: #22D4FD;
+    --color-hover: #272727;
+
+    /* Configuración de fuente (variables) */
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+
+/* "*" -> SELECTOR UNIVERSAL (todos los elementos de la página web) */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* PERSONALIZACIÓN DEL CUERPO DE LA PÁGINA */
+/* Observación: No es recomendable configurar la fuente del contenido en el cuerpo de la página, pues la fuente varía entre títulos (h1, h2) y párrafos. */
+body {
+    box-sizing: border-box;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+}
+
+/* PERSONALIZACIÓN DE LA CLASE HEADER */
+/* Observación: Se usan porcentajes para trabajar en relación con el viewport. */
+.header {
+    padding: 2% 0 0 15%;
+}
+
+/* PERSONALIZACIÓN DE LA BARRA DE NAVEGACIÓN (contenido) */
+.header__menu {
+    /* Control de visualización e interacción del elemento (flex -> flexible)*/
+    display: flex;
+    /* gap -> espacio entre elementos. */
+    gap: 80px;
+}
+
+/* PERSONALIZACIÓN DE LOS ENLACES */
+.header__menu__link {
+    font-family: var(--fuente-montserrat);
+    font-size: 24px;
+    font-weight: 600;           /*Semibold*/
+    color: var(--color-terciario);
+    text-decoration: none;      /*Desactivar marcado azul predeterminado*/
+}
+
+
+/* PERSONALIZACIÓN DE LA PRESENTACIÓN DE INFORMACIÓN (contenedor main) */
+.presentacion {
+    padding: 5% 15%;
+    /*Disposición flexible (horizontal de forma predeterminada)*/
+    display: flex;
+    /*Alineación de ítems de forma centrada vertical*/
+    align-items: center;
+    /*Primer y último elemento acomodado en los extremos y distribución de los demás en relación al espacio entre ellos.*/
+    justify-content: space-between;
+}
+
+/* PERSONALIZACIÓN DE LA PRESENTACIÓN DE INFORMACIÓN (contenido section) */
+.presentacion__contenido {
+    /*Ancho*/
+    width: 615px;
+    display: flex;
+    /*Dirección de flexibilidad (columna, fila predeterminada)*/
+    flex-direction: column;
+    /*Espacio entre h1, p y section*/
+    gap: 40px;
+}
+
+/* PERSONALIZACIÓN DEL TÍTULO DE LA PRESENTACIÓN DE LA INFORMACIÓN (h1) */
+.presentacion__contenido__titulo {
+    font-size: 36px;
+    font-family: var(--fuente-krona);
+}
+
+/* CAMBIO DEL COLOR DEL DESTAQUE (strong) */
+.titulo__destaque {
+    color: var(--color-terciario);
+}
+
+/* PERSONALIZACIÓN DEL PÁRRAFO INFORMATIVO (p) */
+.presentacion__contenido__texto {
+    font-size: 24px;
+    color: var(--fuente-montserrat)
+}
+
+/* PERSONALIZACIÓN DE LOS ENLACES (section) */
+.presentacion__enlaces {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+/* PERSONALIZACIÓN DEL SUBTÍTULO DE LOS ENLACES (h2) */
+.presentacion__enlaces__subtitulo {
+    font-family: var(--fuente-krona);
+    font-size: 24px;
+    font-weight: 400;       /*Regular*/
+    text-align: center;
+}
+
+.presentacion__enlaces__link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--color-terciario);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 16px 0;
+    text-decoration: none;
+    color: var(--color-secundario);
+    font-family: var(--fuente-montserrat);
+}
+
+.presentacion__enlaces__link:hover {
+    background-color: var(--color-hover);
+}
+
+.footer {
+    color: var(--color-primario);
+    background-color: var(--color-terciario);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: 24px;
+    font-weight: 400;
+}
+
