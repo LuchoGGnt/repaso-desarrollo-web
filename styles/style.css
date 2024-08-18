@@ -71,7 +71,7 @@ body {
     /*Dirección de flexibilidad (columna, fila predeterminada)*/
     flex-direction: column;
     /*Espacio entre h1, p y section*/
-    gap: 40px;
+    gap: 25px;
 }
 
 /* PERSONALIZACIÓN DEL TÍTULO DE LA PRESENTACIÓN DE LA INFORMACIÓN (h1) */
@@ -89,6 +89,13 @@ body {
 .presentacion__contenido__texto {
     font-size: 24px;
     color: var(--fuente-montserrat)
+}
+
+.presentacion__contenido__enlaces {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
 }
 
 /* PERSONALIZACIÓN DE LOS ENLACES (section) */
